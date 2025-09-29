@@ -22,6 +22,10 @@ import (
 func main() {
 	reader := bufio.NewReader(os.Stdin)
 
+	func() {
+        fmt.Println("Função anônima executada dentro do main")
+    }()
+
 	// Loop infinito para manter o menu ativo até o usuário decidir sair
 	for {
 		// Limpa a tela para uma melhor experiência de menu
@@ -117,3 +121,4 @@ func main() {
 		}
 	}
 }
+
